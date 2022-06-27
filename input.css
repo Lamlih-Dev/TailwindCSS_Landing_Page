@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    position: relative;
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 120% -16%;
+}
+body::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: -65% 65%;
+    z-index: -1;
+}
+#cta{
+    background-image: url(../img/bg-simplify-section-mobile.svg);
+    background-size: cover;
+}
